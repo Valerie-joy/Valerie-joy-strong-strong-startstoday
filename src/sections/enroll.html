@@ -1,0 +1,88 @@
+<!-- Enrollment — STYLING TARGET for the existing GoHighLevel order form.
+     Do not ship this mockup form: embed the real GHL form here and restyle it to match. -->
+<section class="section" id="enroll" style="border-top:1px solid var(--line)">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Enrollment</span>
+      <h2 class="h2">You're one step away from <em>your Strong Start.</em></h2>
+      <p class="lead">Your Strong Start is just a few clicks away.</p>
+    </div>
+    <div class="enroll__grid">
+      <form class="checkout" aria-label="Enrollment and payment" onsubmit="return false">
+        <fieldset class="fieldset">
+          <legend>1. Your details</legend>
+          <div class="field">
+            <label class="label" for="ss-name">Full name</label>
+            <input class="input" id="ss-name" type="text" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label class="label" for="ss-email">Email address</label>
+            <input class="input" id="ss-email" type="email" autocomplete="email" aria-describedby="ss-email-hint" required>
+            <span class="hint" id="ss-email-hint">Your access details and receipt go here.</span>
+          </div>
+          <div class="field">
+            <label class="label" for="ss-phone">Phone number</label>
+            <input class="input" id="ss-phone" type="tel" autocomplete="tel" aria-invalid="true" aria-describedby="ss-phone-err" value="555 01">
+            <span class="error" id="ss-phone-err"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7.5v5.5M12 16.5v.01"/></svg>Please enter a full phone number, including area code.</span>
+          </div>
+        </fieldset>
+
+        <fieldset class="fieldset">
+          <legend>2. Payment</legend>
+          <div class="pay-methods" role="radiogroup" aria-label="Payment method">
+            <button class="pay-method" type="button" role="radio" aria-checked="true">Card</button>
+            <button class="pay-method" type="button" role="radio" aria-checked="false">PayPal</button>
+            <button class="pay-method" type="button" role="radio" aria-checked="false">Cash App Pay</button>
+            <button class="pay-method" type="button" role="radio" aria-checked="false">Amazon Pay</button>
+          </div>
+          <div class="field">
+            <label class="label" for="ss-card">Card number</label>
+            <input class="input" id="ss-card" type="text" inputmode="numeric" autocomplete="cc-number" placeholder="1234 1234 1234 1234">
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label class="label" for="ss-exp">Expiration</label>
+              <input class="input" id="ss-exp" type="text" autocomplete="cc-exp" placeholder="MM / YY">
+            </div>
+            <div class="field">
+              <label class="label" for="ss-cvc">Security code</label>
+              <input class="input" id="ss-cvc" type="text" inputmode="numeric" autocomplete="cc-csc" placeholder="CVC">
+            </div>
+            <div class="field">
+              <label class="label" for="ss-country">Country</label>
+              <select class="input" id="ss-country" autocomplete="country-name"><option>United States</option></select>
+            </div>
+          </div>
+        </fieldset>
+
+        <div class="field">
+          <button class="btn btn--primary btn--block" type="submit" style="min-height:64px">Start My 14-Day Strong Start &nbsp;·&nbsp; $49.97</button>
+          <p class="secure"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="1.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Secure checkout &nbsp;·&nbsp; One payment &nbsp;·&nbsp; No automatic renewal</p>
+        </div>
+      </form>
+
+      <aside class="summary" aria-label="Order summary">
+        <h3 class="summary__title">Order summary</h3>
+        <div class="summary__item">
+          <div><span class="summary__name">14-Day Strong Start</span><span class="summary__meta">The Strong Collective Premium · Qty 1</span></div>
+          <span>$49.97</span>
+        </div>
+        <div class="field">
+          <label class="label" for="ss-coupon">Coupon code</label>
+          <div class="coupon">
+            <input class="input" id="ss-coupon" type="text">
+            <button class="btn btn--outline" type="button">Apply</button>
+          </div>
+        </div>
+        <div class="totals">
+          <div class="totals__row"><span>Subtotal</span><span>$49.97</span></div>
+          <div class="totals__row totals__row--grand"><span>Total today</span><span class="totals__amount">$49.97</span></div>
+        </div>
+        <ul class="reassure">
+          <li>One payment. No automatic renewal.</li>
+          <li>At the end of your 14 days, you decide if you want to continue.</li>
+        </ul>
+      </aside>
+    </div>
+  </div>
+</section>
