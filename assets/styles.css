@@ -149,23 +149,59 @@ em, .italic { font-style: italic; }
 @media (max-width: 960px) { .nav__link { display: none; } }
 
 /* ---------- 02 Hero ---------- */
-.hero { padding: clamp(48px, 7vw, 104px) 0 clamp(56px, 8vw, 120px); }
-.hero__grid { display: flex; flex-wrap: wrap; align-items: center; gap: clamp(40px, 6vw, 88px); }
-.hero__copy { flex: 1 1 440px; min-width: 0; display: flex; flex-direction: column; gap: 28px; }
-.hero__title { font-size: clamp(52px, 7.4vw, 104px); line-height: .95; letter-spacing: -.01em; }
-.hero__title em { color: var(--gold-ink); }
-.hero__tagline { font-family: var(--serif); font-style: italic; font-size: clamp(24px, 2.4vw, 30px); color: var(--green); }
-.hero__text { max-width: 520px; }
-.hero__actions { display: flex; flex-wrap: wrap; align-items: center; gap: 16px 28px; padding-top: 8px; }
-.hero__support { font-family: var(--serif); font-style: italic; font-size: 20px; line-height: 1.35; color: var(--body); max-width: 280px; }
-.hero__terms { font-size: 15px; color: var(--muted); }
-.hero__media { flex: 1 1 420px; min-width: 0; position: relative; }
-.hero__media .photo { aspect-ratio: 4 / 5; }
-.hero__arch-line {
-  position: absolute; top: -18px; right: -18px; width: 72%; height: 86%;
-  border: 1px solid var(--gold); border-radius: 999px 999px 4px 4px; pointer-events: none;
+/* Desktop: full-width photo, live text over the wall on the left.
+   An ivory fade on the left keeps text at AA contrast and hides retouched areas. */
+.hero--banner {
+  position: relative; overflow: hidden; background: #E9DFD2;
+  min-height: clamp(620px, calc(100vh - var(--nav-h)), 820px);
+  display: flex; align-items: center;
 }
-@media (max-width: 600px) { .hero__arch-line { right: -8px; top: -10px; } }
+.hero__photo { position: absolute; inset: 0; }
+.hero__photo img { width: 100%; height: 100%; object-fit: cover; object-position: 72% 40%; }
+.hero--banner::before {
+  content: ""; position: absolute; inset: 0; z-index: 1; pointer-events: none;
+  background: linear-gradient(90deg,
+    rgba(247, 243, 232, .94) 0%, rgba(247, 243, 232, .88) 30%,
+    rgba(247, 243, 232, .55) 46%, rgba(247, 243, 232, 0) 62%);
+}
+.hero__inner { position: relative; z-index: 2; width: 100%; padding-top: clamp(56px, 7vw, 96px); padding-bottom: clamp(56px, 7vw, 96px); }
+.hero__copy { max-width: 600px; display: flex; flex-direction: column; gap: 24px; }
+.eyebrow--trail { color: var(--green); letter-spacing: .3em; }
+.eyebrow--trail::after { content: ""; width: 96px; height: 1px; background: var(--green); opacity: .45; }
+.hero__title { font-size: clamp(56px, 7.6vw, 112px); line-height: .92; letter-spacing: -.01em; font-weight: 600; }
+.hero__title em { font-style: normal; color: var(--gold-ink); }
+.hero__tagline-caps { font-size: clamp(14px, 1.3vw, 17px); letter-spacing: .24em; text-transform: uppercase; color: var(--ink); }
+.hero__lead { max-width: 440px; font-size: 19px; line-height: 1.6; color: var(--body); }
+.hero__actions { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 24px; padding-top: 6px; }
+.btn--arrow { gap: 14px; border-radius: 999px; padding: 0 32px; }
+.btn--arrow svg { transition: transform .25s ease; }
+.btn--arrow:hover svg { transform: translateX(4px); }
+.hero__terms { font-size: 15px; color: var(--muted); }
+.hero__benefits { margin: 12px 0 0; padding: 0; list-style: none; display: flex; }
+.hero__benefit {
+  display: flex; flex-direction: column; align-items: center; gap: 10px; padding: 0 28px; text-align: center;
+  font-size: 13px; font-weight: 700; letter-spacing: .18em; line-height: 1.35; text-transform: uppercase; color: var(--ink);
+}
+.hero__benefit:first-child { padding-left: 0; }
+.hero__benefit + .hero__benefit { border-left: 1px solid rgba(24, 61, 45, .3); }
+.hero__benefit svg { color: var(--green); }
+
+/* Tablet + phone: photo on top, text below on ivory */
+@media (max-width: 900px) {
+  .hero--banner { display: block; min-height: 0; background: var(--ivory); }
+  .hero--banner::before { display: none; }
+  .hero__photo { position: relative; inset: auto; display: block; aspect-ratio: 993 / 567; }
+  .hero__photo img { object-position: 60% 40%; }
+  .hero__inner { padding-top: 40px; padding-bottom: 56px; }
+}
+@media (max-width: 480px) {
+  .hero__photo { aspect-ratio: 4 / 3; }
+  .eyebrow--trail { white-space: nowrap; }
+  .eyebrow--trail::after { width: 32px; }
+  .hero__benefit { padding: 0 14px; font-size: 11px; letter-spacing: .14em; }
+  .hero__benefit svg { width: 32px; height: 32px; }
+  .hero .btn--arrow { width: 100%; }
+}
 
 /* ---------- 03 A Different Kind of Strong ---------- */
 .different__grid { max-width: 1100px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: clamp(32px, 6vw, 96px); align-items: flex-start; }
