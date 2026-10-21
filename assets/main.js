@@ -51,6 +51,15 @@
     var section = document.getElementById(id);
     if (section) navIO.observe(section);
   });
+  // Back on the hero: no section link should look active
+  var heroEl = document.querySelector('.hero');
+  if (heroEl) {
+    new IntersectionObserver(function (entries) {
+      if (entries[0].isIntersecting) {
+        links.forEach(function (l) { l.classList.remove('is-active'); l.removeAttribute('aria-current'); });
+      }
+    }, { rootMargin: '-45% 0px -50% 0px' }).observe(heroEl);
+  }
 
   /* Mobile CTA bar: show after the hero, hide while checkout is on screen */
   var bar = document.querySelector('.mobile-cta');
