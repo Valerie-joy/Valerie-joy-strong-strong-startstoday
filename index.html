@@ -1,285 +1,389 @@
 <!doctype html>
+<!-- Built by build.py from src/ — edit the files in src/sections/, not this file. -->
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Strong Starts Today — Homepage Redesign</title>
+<title>Your Strong Starts Here — The 14-Day Strong Start | The Strong Collective</title>
 <meta name="description" content="The 14-Day Strong Start from The Strong Collective: live and on-demand workouts, accountability, mindset and community. $49.97 one-time, no automatic renewal.">
+<meta name="theme-color" content="#183D2D">
+<meta property="og:title" content="Your Strong Starts Here — The Strong Collective">
+<meta property="og:description" content="14 days of movement, mindset, accountability, and community. $49.97 one-time, no automatic renewal.">
+<meta property="og:type" content="website">
+<script>document.documentElement.classList.add('js');</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;family=Lato:wght@400;700&amp;display=swap">
-<style>
-body{margin:0;background:#F7F3E8;color:#1F2B25;font-family:'Lato',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
-a{color:#183D2D}a:hover{color:#7A6124}
-*:focus-visible{outline:3px solid #B59645;outline-offset:3px}
-.ss-btn{transition:background-color .25s ease,color .25s ease,transform .25s ease}
-.ss-btn:hover{background:#0F2A1E !important;color:#F7F3E8 !important;transform:translateY(-1px)}
-.ss-btn-light:hover{background:#E6EC5A !important;color:#183D2D !important;transform:translateY(-1px)}
-.ss-field:focus{border-color:#183D2D !important;box-shadow:0 0 0 3px rgba(181,150,69,.35)}
-@media (prefers-reduced-motion:reduce){*{transition:none !important;animation:none !important;scroll-behavior:auto !important}}
-</style>
-<style>html{scroll-behavior:smooth}</style>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Lato:wght@400;700&display=swap">
+<link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
-<div style="width: 100%; min-height: 100%; background: #F7F3E8; overflow-x: hidden">
-
-<!-- Header -->
-<header style="border-bottom: 1px solid rgba(24,61,45,.14)">
-<div style="max-width: 1240px; margin: 0 auto; padding: 18px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
-<a href="#top" style="text-decoration: none; display: flex; flex-direction: column; gap: 2px">
-<span style="font-family: 'Lato', sans-serif; font-size: 13px; letter-spacing: .32em; font-weight: 700; color: #183D2D">THE STRONG COLLECTIVE</span>
-<span style="font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 15px; color: #7A6124">by The KASH Method</span>
-</a>
-<a href="#enroll" class="ss-btn" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 22px; border: 1px solid #183D2D; color: #183D2D; text-decoration: none; font-size: 13px; font-weight: 700; letter-spacing: .16em">BEGIN YOUR STRONG START</a>
-</div>
+<a class="skip-link" href="#main">Skip to content</a>
+<!-- Sticky header: brand, section links (hidden under 960px), CTA -->
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="brand" href="#top" aria-label="The Strong Collective, back to top">
+      <span class="brand__name">THE STRONG COLLECTIVE</span>
+      <span class="brand__by">by The KASH Method</span>
+    </a>
+    <nav class="nav" aria-label="Page sections">
+      <a class="nav__link" href="#experience">The Experience</a>
+      <a class="nav__link" href="#included">What's Included</a>
+      <a class="nav__link" href="#how">How It Works</a>
+      <a class="nav__link" href="#pricing">Pricing</a>
+      <a class="nav__link" href="#faq">FAQ</a>
+    </nav>
+    <a class="btn btn--outline" href="#enroll">Begin</a>
+  </div>
 </header>
-
-<!-- 1 Hero -->
-<section id="top" style="max-width: 1240px; margin: 0 auto; padding: clamp(48px, 7vw, 104px) 24px clamp(56px, 8vw, 120px); display: flex; flex-wrap: wrap; align-items: center; gap: clamp(40px, 6vw, 88px)">
-<div style="flex: 1 1 440px; min-width: 0; display: flex; flex-direction: column; gap: 28px">
-<div style="display: flex; align-items: center; gap: 14px">
-<span style="width: 40px; height: 1px; background: #B59645"></span>
-<span style="font-size: 13px; letter-spacing: .3em; font-weight: 700; color: #7A6124">THE STRONG COLLECTIVE</span>
-</div>
-<h1 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: clamp(52px, 7.4vw, 104px); line-height: .95; letter-spacing: -.01em; color: #183D2D">Your Strong<br><span style="font-style: italic; color: #7A6124">Starts Here.</span></h1>
-<p style="margin: 0; font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: clamp(24px, 2.4vw, 30px); color: #183D2D">Train the mind. The body follows.</p>
-<p style="margin: 0; max-width: 520px; font-size: 19px; line-height: 1.65; color: #3F4B45">For the next 14 days, get full access to The Strong Collective Premium experience — workouts you can do from home, real accountability, and a community of women choosing to show up for themselves, right alongside you.</p>
-<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px 28px; padding-top: 8px">
-<a href="#enroll" class="ss-btn" style="display: inline-flex; align-items: center; justify-content: center; min-height: 60px; padding: 0 36px; background: #183D2D; color: #F7F3E8; text-decoration: none; font-size: 14px; font-weight: 700; letter-spacing: .18em">BEGIN YOUR STRONG START</a>
-<span style="font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 20px; line-height: 1.35; color: #3F4B45; max-width: 280px">14 days of movement, mindset, accountability, and community.</span>
-</div>
-<p style="margin: 0; font-size: 15px; color: #4A564F; letter-spacing: .02em">$49.97 one-time  ·  No automatic renewal  ·  You decide what's next</p>
-</div>
-<div style="flex: 1 1 420px; min-width: 0; position: relative">
-<div style="position: absolute; top: -18px; right: -18px; width: 72%; height: 86%; border: 1px solid #B59645; border-radius: 999px 999px 4px 4px" aria-hidden="true"></div>
-<div role="img" aria-label="Photo placeholder: existing brand hero photo" style="position: relative; aspect-ratio: 4 / 5; width: 100%; border-radius: 999px 999px 4px 4px; background: #DCD3BD; display: flex; align-items: flex-end; overflow: hidden">
-<div style="padding: 28px 32px 32px; display: flex; flex-direction: column; gap: 6px">
-<span style="font-size: 12px; letter-spacing: .24em; font-weight: 700; color: #183D2D">BRAND PHOTO</span>
-<span style="font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 20px; line-height: 1.35; color: #183D2D; max-width: 340px">Current hero image — woman stretching on her mat in a warm, sunlit room. Re-crop from the original file, without the headline baked in.</span>
-</div>
-</div>
-</div>
+<main id="main">
+<!-- Hero: value proposition + primary CTA above the fold -->
+<section class="hero" id="top">
+  <div class="container hero__grid">
+    <div class="hero__copy">
+      <span class="eyebrow eyebrow--rule">The Strong Collective</span>
+      <h1 class="hero__title">Your Strong<br><em>Starts Here.</em></h1>
+      <p class="hero__tagline">Train the mind. The body follows.</p>
+      <p class="lead hero__text">For the next 14 days, get full access to The Strong Collective Premium experience — workouts you can do from home, real accountability, and a community of women choosing to show up for themselves, right alongside you.</p>
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="#enroll">Begin Your Strong Start</a>
+        <span class="hero__support">14 days of movement, mindset, accountability, and community.</span>
+      </div>
+      <p class="hero__terms">$49.97 one-time &nbsp;·&nbsp; No automatic renewal &nbsp;·&nbsp; You decide what's next</p>
+    </div>
+    <div class="hero__media">
+      <div class="hero__arch-line" aria-hidden="true"></div>
+      <!-- Replace with: <img src="assets/img/hero.jpg" alt="Woman stretching on a yoga mat in a sunlit living room" width="960" height="1200" fetchpriority="high"> -->
+      <div class="photo photo--arch" role="img" aria-label="Photo placeholder: brand hero photo">
+        <div class="photo__label">
+          <span class="photo__tag">BRAND PHOTO</span>
+          <span class="photo__note">Current hero image — woman stretching on her mat in a warm, sunlit room. Re-crop from the original file, without the headline baked in.</span>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<!-- 2 Emotional connection -->
-<section style="background: #EFE8D6">
-<div style="max-width: 1100px; margin: 0 auto; padding: clamp(72px, 9vw, 136px) 24px; display: flex; flex-wrap: wrap; gap: clamp(32px, 6vw, 96px); align-items: flex-start">
-<h2 style="flex: 1 1 320px; margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: clamp(44px, 5.4vw, 76px); line-height: 1; color: #183D2D">A Different<br>Kind of <span style="font-style: italic; color: #7A6124">Strong.</span></h2>
-<div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 24px; padding-top: 10px">
-<p style="margin: 0; font-family: 'Cormorant Garamond', serif; font-size: clamp(26px, 2.6vw, 34px); line-height: 1.3; color: #183D2D">Strength isn't perfection. It isn't pushing harder, or starting over every Monday.</p>
-<p style="margin: 0; font-size: 19px; line-height: 1.7; color: #3F4B45">It's choosing yourself — and having the guidance and support to keep going when motivation isn't enough. You don't have to figure out the next 14 days today. Just make the decision to show up for yourself today.</p>
-<p style="margin: 0; font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 24px; color: #7A6124">We'll help you with the rest.</p>
-</div>
-</div>
+<!-- Emotional connection -->
+<section class="section band">
+  <div class="container different__grid reveal">
+    <h2 class="different__title">A Different<br>Kind of <em>Strong.</em></h2>
+    <div class="different__body">
+      <p class="different__statement">Strength isn't perfection. It isn't pushing harder, or starting over every Monday.</p>
+      <p class="lead">It's choosing yourself — and having the guidance and support to keep going when motivation isn't enough. You don't have to figure out the next 14 days today. Just make the decision to show up for yourself today.</p>
+      <p class="different__close">We'll help you with the rest.</p>
+    </div>
+  </div>
 </section>
 
-<!-- 3 Pillars -->
-<section style="max-width: 1240px; margin: 0 auto; padding: clamp(80px, 10vw, 144px) 24px">
-<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px; margin-bottom: clamp(48px, 6vw, 80px)">
-<div style="display: flex; flex-direction: column; gap: 18px; max-width: 640px">
-<span style="font-size: 13px; letter-spacing: .3em; font-weight: 700; color: #7A6124">THE STRONG COLLECTIVE EXPERIENCE</span>
-<h2 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: clamp(40px, 4.6vw, 64px); line-height: 1.05; color: #183D2D">And you'll have what you need to <span style="font-style: italic">keep going.</span></h2>
-</div>
-</div>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 480px), 1fr)); column-gap: clamp(40px, 6vw, 96px)">
-<article style="display: flex; gap: 28px; padding: 40px 0; border-top: 1px solid #B59645">
-<span style="font-family: 'Cormorant Garamond', serif; font-size: 56px; line-height: .9; color: #B59645" aria-hidden="true">01</span>
-<div style="display: flex; flex-direction: column; gap: 12px">
-<h3 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: 32px; line-height: 1.1; color: #183D2D">Movement That Fits Your Life</h3>
-<p style="margin: 0; font-size: 18px; line-height: 1.65; color: #3F4B45">Live and on-demand workouts you can do from home, without making fitness another job.</p>
-</div>
-</article>
-<article style="display: flex; gap: 28px; padding: 40px 0; border-top: 1px solid #B59645">
-<span style="font-family: 'Cormorant Garamond', serif; font-size: 56px; line-height: .9; color: #B59645" aria-hidden="true">02</span>
-<div style="display: flex; flex-direction: column; gap: 12px">
-<h3 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: 32px; line-height: 1.1; color: #183D2D">Accountability That Keeps You Moving</h3>
-<p style="margin: 0; font-size: 18px; line-height: 1.65; color: #3F4B45">Real support to help you follow through when motivation isn't enough — guidance, Q&amp;A, and encouragement.</p>
-</div>
-</article>
-<article style="display: flex; gap: 28px; padding: 40px 0; border-top: 1px solid #B59645">
-<span style="font-family: 'Cormorant Garamond', serif; font-size: 56px; line-height: .9; color: #B59645" aria-hidden="true">03</span>
-<div style="display: flex; flex-direction: column; gap: 12px">
-<h3 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: 32px; line-height: 1.1; color: #183D2D">Mindset That Disrupts the Pattern</h3>
-<p style="margin: 0; font-size: 18px; line-height: 1.65; color: #3F4B45">Build self-trust, stronger habits and the mindset to stop starting over.</p>
-</div>
-</article>
-<article style="display: flex; gap: 28px; padding: 40px 0; border-top: 1px solid #B59645">
-<span style="font-family: 'Cormorant Garamond', serif; font-size: 56px; line-height: .9; color: #B59645" aria-hidden="true">04</span>
-<div style="display: flex; flex-direction: column; gap: 12px">
-<h3 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: 32px; line-height: 1.1; color: #183D2D">Women Who Get It</h3>
-<p style="margin: 0; font-size: 18px; line-height: 1.65; color: #3F4B45">A community of women choosing to show up for themselves, right alongside you.</p>
-</div>
-</article>
-</div>
+<!-- The four pillars -->
+<section class="section" id="experience">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">The Strong Collective Experience</span>
+      <h2 class="h2">And you'll have what you need to <em>keep going.</em></h2>
+    </div>
+    <div class="pillars">
+      <article class="pillar reveal">
+        <span class="pillar__num" aria-hidden="true">01</span>
+        <div class="pillar__body">
+          <h3 class="pillar__title">Movement That Fits Your Life</h3>
+          <p class="pillar__text">Live and on-demand workouts you can do from home, without making fitness another job.</p>
+        </div>
+      </article>
+      <article class="pillar reveal">
+        <span class="pillar__num" aria-hidden="true">02</span>
+        <div class="pillar__body">
+          <h3 class="pillar__title">Accountability That Keeps You Moving</h3>
+          <p class="pillar__text">Real support to help you follow through when motivation isn't enough — guidance, Q&amp;A, and encouragement.</p>
+        </div>
+      </article>
+      <article class="pillar reveal">
+        <span class="pillar__num" aria-hidden="true">03</span>
+        <div class="pillar__body">
+          <h3 class="pillar__title">Mindset That Disrupts the Pattern</h3>
+          <p class="pillar__text">Build self-trust, stronger habits and the mindset to stop starting over.</p>
+        </div>
+      </article>
+      <article class="pillar reveal">
+        <span class="pillar__num" aria-hidden="true">04</span>
+        <div class="pillar__body">
+          <h3 class="pillar__title">Women Who Get It</h3>
+          <p class="pillar__text">A community of women choosing to show up for themselves, right alongside you.</p>
+        </div>
+      </article>
+    </div>
+  </div>
 </section>
 
-<!-- 4 What's included -->
-<section style="background: #183D2D; color: #F7F3E8">
-<div style="max-width: 1240px; margin: 0 auto; padding: clamp(80px, 10vw, 136px) 24px; display: flex; flex-wrap: wrap; gap: clamp(40px, 7vw, 120px)">
-<div style="flex: 1 1 340px; min-width: 0; display: flex; flex-direction: column; gap: 22px">
-<span style="font-size: 13px; letter-spacing: .3em; font-weight: 700; color: #D7DF21">YOUR 14-DAY STRONG START</span>
-<h2 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: clamp(40px, 4.6vw, 64px); line-height: 1.05; color: #F7F3E8">What your 14 days <span style="font-style: italic">include.</span></h2>
-<p style="margin: 0; font-size: 19px; line-height: 1.65; color: #C9D1C6; max-width: 420px">Full access to The Strong Collective Premium experience — and the support to start showing up for yourself differently.</p>
-</div>
-<ul style="flex: 1 1 480px; min-width: 0; margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column">
-<li style="display: flex; align-items: center; gap: 20px; padding: 22px 0; border-top: 1px solid rgba(247,243,232,.18)"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#D7DF21" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"></path></svg><span style="font-family: 'Cormorant Garamond', serif; font-size: 28px; line-height: 1.2">Live virtual workouts</span></li>
-<li style="display: flex; align-items: center; gap: 20px; padding: 22px 0; border-top: 1px solid rgba(247,243,232,.18)"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#D7DF21" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"></path></svg><span style="font-family: 'Cormorant Garamond', serif; font-size: 28px; line-height: 1.2">Full replay + on-demand library</span></li>
-<li style="display: flex; align-items: center; gap: 20px; padding: 22px 0; border-top: 1px solid rgba(247,243,232,.18)"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#D7DF21" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"></path></svg><span style="font-family: 'Cormorant Garamond', serif; font-size: 28px; line-height: 1.2">Kash Connect accountability + Q&amp;A</span></li>
-<li style="display: flex; align-items: center; gap: 20px; padding: 22px 0; border-top: 1px solid rgba(247,243,232,.18)"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#D7DF21" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"></path></svg><span style="font-family: 'Cormorant Garamond', serif; font-size: 28px; line-height: 1.2">Mindset + wellness resources</span></li>
-<li style="display: flex; align-items: center; gap: 20px; padding: 22px 0; border-top: 1px solid rgba(247,243,232,.18)"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#D7DF21" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"></path></svg><span style="font-family: 'Cormorant Garamond', serif; font-size: 28px; line-height: 1.2">Challenges, guides + masterclasses</span></li>
-<li style="display: flex; align-items: center; gap: 20px; padding: 22px 0; border-top: 1px solid rgba(247,243,232,.18); border-bottom: 1px solid rgba(247,243,232,.18)"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#D7DF21" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"></path></svg><span style="font-family: 'Cormorant Garamond', serif; font-size: 28px; line-height: 1.2">The Strong Collective community</span></li>
-</ul>
-</div>
+<!-- What the 14 days include (exact list from the live site) -->
+<section class="section band-green" id="included">
+  <div class="container included__grid">
+    <div class="included__intro reveal">
+      <span class="eyebrow">Your 14-Day Strong Start</span>
+      <h2 class="h2">What your 14 days <em>include.</em></h2>
+      <p class="lead">Full access to The Strong Collective Premium experience — and the support to start showing up for yourself differently.</p>
+    </div>
+    <ul class="included__list reveal">
+      <li class="included__item"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#D7DF21" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>Live virtual workouts</li>
+      <li class="included__item"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#D7DF21" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>Full replay + on-demand library</li>
+      <li class="included__item"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#D7DF21" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>Kash Connect accountability + Q&amp;A</li>
+      <li class="included__item"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#D7DF21" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>Mindset + wellness resources</li>
+      <li class="included__item"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#D7DF21" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>Challenges, guides + masterclasses</li>
+      <li class="included__item"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#D7DF21" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>The Strong Collective community</li>
+    </ul>
+  </div>
 </section>
 
-<!-- 5 Lifestyle storytelling -->
-<section style="max-width: 1240px; margin: 0 auto; padding: clamp(80px, 10vw, 144px) 24px; display: flex; flex-wrap: wrap; align-items: center; gap: clamp(40px, 7vw, 112px)">
-<div style="flex: 1 1 480px; min-width: 0; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 20px; align-items: end">
-<div role="img" aria-label="Photo placeholder: women moving together" style="grid-column: span 3; aspect-ratio: 3 / 4; background: #DCD3BD; border-radius: 4px; display: flex; align-items: flex-end">
-<div style="padding: 22px; display: flex; flex-direction: column; gap: 6px">
-<span style="font-size: 11px; letter-spacing: .24em; font-weight: 700; color: #183D2D">PROPOSED SHOT</span>
-<span style="font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 18px; line-height: 1.3; color: #183D2D">Women 45–60 moving together at home, natural light, real laughter.</span>
-</div>
-</div>
-<div role="img" aria-label="Photo placeholder: a quiet moment of rest" style="grid-column: span 2; aspect-ratio: 3 / 5; background: #CFC6AE; border-radius: 999px 999px 4px 4px; display: flex; align-items: flex-end; margin-bottom: 48px">
-<div style="padding: 18px; display: flex; flex-direction: column; gap: 6px">
-<span style="font-size: 11px; letter-spacing: .24em; font-weight: 700; color: #183D2D">PROPOSED</span>
-<span style="font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 17px; line-height: 1.3; color: #183D2D">A quiet stretch, coffee after a class.</span>
-</div>
-</div>
-</div>
-<div style="flex: 1 1 400px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
-<span style="font-size: 13px; letter-spacing: .3em; font-weight: 700; color: #7A6124">A SPACE TO SHOW UP FOR YOURSELF</span>
-<h2 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: clamp(40px, 4.6vw, 64px); line-height: 1.05; color: #183D2D">Strength for the life <span style="font-style: italic">you're living.</span></h2>
-<p style="margin: 0; font-size: 19px; line-height: 1.7; color: #3F4B45">Your days are already full. The Strong Collective is built to fit inside them — join live, or press play when it suits you, from home, alongside women who understand what a full life asks of you.</p>
-<p style="margin: 0; font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 24px; line-height: 1.35; color: #183D2D">No pressure. No starting over. Just your next step.</p>
-</div>
+<!-- How it works: makes the next step concrete.
+     Step 2 wording assumes access details arrive by email — confirm with the brand. -->
+<section class="section" id="how">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">How It Works</span>
+      <h2 class="h2">Three simple steps to <em>begin.</em></h2>
+    </div>
+    <ol class="steps reveal" style="margin:0;padding:0;list-style:none">
+      <li class="step">
+        <span class="step__num">STEP 01</span>
+        <h3 class="step__title">Enroll today</h3>
+        <p class="step__text">One payment of $49.97. No automatic renewal, nothing to cancel later.</p>
+      </li>
+      <li class="step">
+        <span class="step__num">STEP 02</span>
+        <h3 class="step__title">Get your access</h3>
+        <p class="step__text">Everything you need to get started is sent to the email you enroll with.</p>
+      </li>
+      <li class="step">
+        <span class="step__num">STEP 03</span>
+        <h3 class="step__title">Show up your way</h3>
+        <p class="step__text">Join a live workout or press play on a replay — from home, on your schedule, with women who get it.</p>
+      </li>
+    </ol>
+  </div>
 </section>
 
-<!-- 6 The invitation -->
-<section style="background: #EFE8D6">
-<div style="max-width: 920px; margin: 0 auto; padding: clamp(80px, 10vw, 136px) 24px">
-<div style="background: #F7F3E8; border: 1px solid #B59645; padding: clamp(40px, 6vw, 80px) clamp(24px, 6vw, 80px); display: flex; flex-direction: column; align-items: center; text-align: center; gap: 22px">
-<span style="font-size: 13px; letter-spacing: .3em; font-weight: 700; color: #7A6124">A SIMPLE INVITATION</span>
-<h2 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: clamp(36px, 4vw, 52px); line-height: 1.05; color: #183D2D">Your 14-Day Strong Start</h2>
-<div style="display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 8px 0">
-<span style="font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: clamp(72px, 9vw, 112px); line-height: 1; color: #183D2D">$49.97</span>
-<span style="font-size: 14px; letter-spacing: .22em; font-weight: 700; color: #4A564F">ONE-TIME PAYMENT</span>
-</div>
-<p style="margin: 0; max-width: 520px; font-size: 19px; line-height: 1.65; color: #3F4B45">14 days of full access to The Strong Collective Premium experience.</p>
-<div style="width: 100%; display: flex; flex-wrap: wrap; justify-content: center; border-top: 1px solid rgba(24,61,45,.14); border-bottom: 1px solid rgba(24,61,45,.14); margin: 8px 0">
-<div style="flex: 1 1 180px; padding: 22px 12px; display: flex; flex-direction: column; gap: 4px"><span style="font-family: 'Cormorant Garamond', serif; font-size: 24px; color: #183D2D">No automatic renewal</span><span style="font-size: 15px; color: #4A564F">One payment, that's it.</span></div>
-<div style="flex: 1 1 180px; padding: 22px 12px; display: flex; flex-direction: column; gap: 4px"><span style="font-family: 'Cormorant Garamond', serif; font-size: 24px; color: #183D2D">You decide at day 14</span><span style="font-size: 15px; color: #4A564F">Continue only if it's right for you.</span></div>
-<div style="flex: 1 1 180px; padding: 22px 12px; display: flex; flex-direction: column; gap: 4px"><span style="font-family: 'Cormorant Garamond', serif; font-size: 24px; color: #183D2D">No pressure</span><span style="font-size: 15px; color: #4A564F">Just your next step.</span></div>
-</div>
-<a href="#enroll" class="ss-btn" style="display: inline-flex; align-items: center; justify-content: center; min-height: 60px; padding: 0 44px; background: #183D2D; color: #F7F3E8; text-decoration: none; font-size: 14px; font-weight: 700; letter-spacing: .18em">START MY 14 DAYS</a>
-</div>
-</div>
+<!-- Lifestyle storytelling -->
+<section class="section band">
+  <div class="container lifestyle__grid">
+    <div class="lifestyle__media reveal">
+      <!-- Replace each placeholder with <img src="assets/img/..." alt="..." loading="lazy"> -->
+      <div class="photo photo--soft" role="img" aria-label="Photo placeholder: women moving together">
+        <div class="photo__label">
+          <span class="photo__tag">PROPOSED SHOT</span>
+          <span class="photo__note">Women 45–60 moving together at home, natural light, real laughter.</span>
+        </div>
+      </div>
+      <div class="photo photo--arch" role="img" aria-label="Photo placeholder: a quiet moment of rest">
+        <div class="photo__label">
+          <span class="photo__tag">PROPOSED</span>
+          <span class="photo__note">A quiet stretch, coffee after a class.</span>
+        </div>
+      </div>
+    </div>
+    <div class="lifestyle__copy reveal">
+      <span class="eyebrow">A Space to Show Up for Yourself</span>
+      <h2 class="h2">Strength for the life <em>you're living.</em></h2>
+      <p class="lead">Your days are already full. The Strong Collective is built to fit inside them — join live, or press play when it suits you, from home, alongside women who understand what a full life asks of you.</p>
+      <p class="pull">No pressure. No starting over. Just your next step.</p>
+    </div>
+  </div>
 </section>
 
-<!-- 7 Enrollment + checkout -->
-<section id="enroll" style="max-width: 1240px; margin: 0 auto; padding: clamp(80px, 10vw, 136px) 24px">
-<div style="display: flex; flex-direction: column; gap: 16px; max-width: 640px; margin-bottom: clamp(40px, 5vw, 64px)">
-<span style="font-size: 13px; letter-spacing: .3em; font-weight: 700; color: #7A6124">ENROLLMENT</span>
-<h2 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: clamp(40px, 4.6vw, 64px); line-height: 1.05; color: #183D2D">You're one step away from <span style="font-style: italic">your Strong Start.</span></h2>
-<p style="margin: 0; font-size: 19px; line-height: 1.65; color: #3F4B45">Your Strong Start is just a few clicks away.</p>
-</div>
-<div style="display: flex; flex-wrap: wrap-reverse; gap: clamp(32px, 5vw, 64px); align-items: flex-start">
-
-<form style="flex: 999 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 40px" aria-label="Enrollment and payment">
-<fieldset style="margin: 0; padding: 0; border: 0; display: flex; flex-direction: column; gap: 20px">
-<legend style="padding: 0 0 18px; font-family: 'Cormorant Garamond', serif; font-size: 30px; color: #183D2D">1. Your details</legend>
-<div style="display: flex; flex-direction: column; gap: 8px">
-<label for="ss-name" style="font-size: 15px; font-weight: 700; color: #1F2B25">Full name</label>
-<input id="ss-name" class="ss-field" type="text" autocomplete="name" style="height: 56px; padding: 0 18px; font: 18px 'Lato', sans-serif; color: #1F2B25; background: #FFFDF8; border: 1px solid #A9A08A; border-radius: 4px; outline: none">
-</div>
-<div style="display: flex; flex-direction: column; gap: 8px">
-<label for="ss-email" style="font-size: 15px; font-weight: 700; color: #1F2B25">Email address</label>
-<input id="ss-email" class="ss-field" type="email" autocomplete="email" aria-describedby="ss-email-hint" style="height: 56px; padding: 0 18px; font: 18px 'Lato', sans-serif; color: #1F2B25; background: #FFFDF8; border: 1px solid #A9A08A; border-radius: 4px; outline: none">
-<span id="ss-email-hint" style="font-size: 14px; color: #4A564F">Your access details and receipt go here.</span>
-</div>
-<div style="display: flex; flex-direction: column; gap: 8px">
-<label for="ss-phone" style="font-size: 15px; font-weight: 700; color: #1F2B25">Phone number</label>
-<input id="ss-phone" class="ss-field" type="tel" autocomplete="tel" aria-invalid="true" aria-describedby="ss-phone-err" value="555 01" style="height: 56px; padding: 0 18px; font: 18px 'Lato', sans-serif; color: #1F2B25; background: #FFFDF8; border: 1.5px solid #A3341F; border-radius: 4px; outline: none">
-<span id="ss-phone-err" style="display: flex; align-items: center; gap: 8px; font-size: 14px; color: #A3341F"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 7.5v5.5M12 16.5v.01"></path></svg>Please enter a full phone number, including area code.</span>
-</div>
-</fieldset>
-
-<fieldset style="margin: 0; padding: 0; border: 0; display: flex; flex-direction: column; gap: 20px">
-<legend style="padding: 0 0 18px; font-family: 'Cormorant Garamond', serif; font-size: 30px; color: #183D2D">2. Payment</legend>
-<div role="radiogroup" aria-label="Payment method" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 10px">
-<button type="button" role="radio" aria-checked="true" style="min-height: 52px; background: #FFFDF8; border: 2px solid #183D2D; border-radius: 4px; font: 700 15px 'Lato', sans-serif; color: #183D2D; cursor: pointer">Card</button>
-<button type="button" role="radio" aria-checked="false" style="min-height: 52px; background: #FFFDF8; border: 1px solid #A9A08A; border-radius: 4px; font: 15px 'Lato', sans-serif; color: #1F2B25; cursor: pointer">PayPal</button>
-<button type="button" role="radio" aria-checked="false" style="min-height: 52px; background: #FFFDF8; border: 1px solid #A9A08A; border-radius: 4px; font: 15px 'Lato', sans-serif; color: #1F2B25; cursor: pointer">Cash App Pay</button>
-<button type="button" role="radio" aria-checked="false" style="min-height: 52px; background: #FFFDF8; border: 1px solid #A9A08A; border-radius: 4px; font: 15px 'Lato', sans-serif; color: #1F2B25; cursor: pointer">Amazon Pay</button>
-</div>
-<div style="display: flex; flex-direction: column; gap: 8px">
-<label for="ss-card" style="font-size: 15px; font-weight: 700; color: #1F2B25">Card number</label>
-<input id="ss-card" class="ss-field" type="text" inputmode="numeric" autocomplete="cc-number" placeholder="1234 1234 1234 1234" style="height: 56px; padding: 0 18px; font: 18px 'Lato', sans-serif; color: #1F2B25; background: #FFFDF8; border: 1px solid #A9A08A; border-radius: 4px; outline: none">
-</div>
-<div style="display: flex; flex-wrap: wrap; gap: 16px">
-<div style="flex: 1 1 160px; display: flex; flex-direction: column; gap: 8px">
-<label for="ss-exp" style="font-size: 15px; font-weight: 700; color: #1F2B25">Expiration</label>
-<input id="ss-exp" class="ss-field" type="text" autocomplete="cc-exp" placeholder="MM / YY" style="height: 56px; padding: 0 18px; font: 18px 'Lato', sans-serif; color: #1F2B25; background: #FFFDF8; border: 1px solid #A9A08A; border-radius: 4px; outline: none">
-</div>
-<div style="flex: 1 1 160px; display: flex; flex-direction: column; gap: 8px">
-<label for="ss-cvc" style="font-size: 15px; font-weight: 700; color: #1F2B25">Security code</label>
-<input id="ss-cvc" class="ss-field" type="text" inputmode="numeric" autocomplete="cc-csc" placeholder="CVC" style="height: 56px; padding: 0 18px; font: 18px 'Lato', sans-serif; color: #1F2B25; background: #FFFDF8; border: 1px solid #A9A08A; border-radius: 4px; outline: none">
-</div>
-<div style="flex: 1 1 160px; display: flex; flex-direction: column; gap: 8px">
-<label for="ss-country" style="font-size: 15px; font-weight: 700; color: #1F2B25">Country</label>
-<select id="ss-country" class="ss-field" autocomplete="country-name" style="height: 56px; padding: 0 14px; font: 18px 'Lato', sans-serif; color: #1F2B25; background: #FFFDF8; border: 1px solid #A9A08A; border-radius: 4px; outline: none"><option>United States</option></select>
-</div>
-</div>
-</fieldset>
-
-<div style="display: flex; flex-direction: column; gap: 14px">
-<button type="submit" class="ss-btn" style="min-height: 64px; padding: 0 28px; background: #183D2D; color: #F7F3E8; border: 0; border-radius: 2px; font: 700 15px 'Lato', sans-serif; letter-spacing: .16em; cursor: pointer">START MY 14-DAY STRONG START  ·  $49.97</button>
-<p style="margin: 0; display: flex; align-items: center; justify-content: center; gap: 8px; font-size: 14px; color: #4A564F; text-align: center"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="1.5"></rect><path d="M8 11V8a4 4 0 0 1 8 0v3"></path></svg>Secure checkout  ·  One payment  ·  No automatic renewal</p>
-</div>
-</form>
-
-<aside aria-label="Order summary" style="flex: 1 1 340px; min-width: 0; background: #EFE8D6; border-top: 2px solid #B59645; padding: 36px 32px; display: flex; flex-direction: column; gap: 24px">
-<h3 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 30px; color: #183D2D">Order summary</h3>
-<div style="display: flex; justify-content: space-between; gap: 16px; align-items: baseline">
-<div style="display: flex; flex-direction: column; gap: 4px"><span style="font-size: 18px; font-weight: 700; color: #1F2B25">14-Day Strong Start</span><span style="font-size: 15px; color: #4A564F">The Strong Collective Premium · Qty 1</span></div>
-<span style="font-size: 18px; color: #1F2B25">$49.97</span>
-</div>
-<div style="display: flex; flex-direction: column; gap: 8px">
-<label for="ss-coupon" style="font-size: 15px; font-weight: 700; color: #1F2B25">Coupon code</label>
-<div style="display: flex; gap: 8px">
-<input id="ss-coupon" class="ss-field" type="text" style="flex: 1 1 auto; min-width: 0; height: 52px; padding: 0 16px; font: 17px 'Lato', sans-serif; background: #FFFDF8; border: 1px solid #A9A08A; border-radius: 4px; outline: none">
-<button type="button" style="min-height: 52px; padding: 0 20px; background: transparent; border: 1px solid #183D2D; border-radius: 2px; font: 700 14px 'Lato', sans-serif; letter-spacing: .12em; color: #183D2D; cursor: pointer">APPLY</button>
-</div>
-</div>
-<div style="display: flex; flex-direction: column; gap: 10px; padding-top: 20px; border-top: 1px solid rgba(24,61,45,.18)">
-<div style="display: flex; justify-content: space-between; font-size: 16px; color: #3F4B45"><span>Subtotal</span><span>$49.97</span></div>
-<div style="display: flex; justify-content: space-between; align-items: baseline; padding-top: 8px"><span style="font-size: 18px; font-weight: 700; color: #1F2B25">Total today</span><span style="font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: 40px; color: #183D2D">$49.97</span></div>
-</div>
-<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px; font-size: 16px; line-height: 1.5; color: #3F4B45">
-<li style="display: flex; gap: 10px"><span style="color: #7A6124" aria-hidden="true">—</span>One payment. No automatic renewal.</li>
-<li style="display: flex; gap: 10px"><span style="color: #7A6124" aria-hidden="true">—</span>At the end of your 14 days, you decide if you want to continue.</li>
-</ul>
-</aside>
-</div>
+<!-- Meet your coach — every [bracketed] item must come from the brand before launch -->
+<section class="section" id="coach">
+  <div class="container coach__grid">
+    <div class="coach__media reveal">
+      <div class="photo photo--arch" role="img" aria-label="Photo placeholder: coach portrait">
+        <div class="photo__label">
+          <span class="photo__tag">COACH PORTRAIT</span>
+          <span class="photo__note">Warm, natural-light portrait of the coach. Needed from the brand.</span>
+        </div>
+      </div>
+    </div>
+    <div class="coach__copy reveal">
+      <span class="eyebrow eyebrow--rule">Meet Your Coach</span>
+      <h2 class="h2"><span class="placeholder">[Coach name]</span>, founder of <em>The KASH Method</em></h2>
+      <p class="lead"><span class="placeholder">[2–3 sentences from the brand: who she is, why she created The KASH Method, and who she built it for.]</span></p>
+      <p class="coach__quote"><span class="placeholder">[A short line in her own words.]</span></p>
+      <span class="coach__name"><span class="placeholder">[Coach name]</span></span>
+    </div>
+  </div>
 </section>
 
-<!-- 8 Closing -->
-<section style="background: #183D2D; color: #F7F3E8; position: relative; overflow: hidden">
-<div style="position: absolute; left: 50%; top: 64px; width: min(520px, 80vw); aspect-ratio: 1; transform: translateX(-50%); border: 1px solid rgba(181,150,69,.45); border-radius: 50%" aria-hidden="true"></div>
-<div style="position: relative; max-width: 960px; margin: 0 auto; padding: clamp(96px, 12vw, 168px) 24px clamp(80px, 9vw, 120px); display: flex; flex-direction: column; align-items: center; text-align: center; gap: 28px">
-<span style="font-size: 13px; letter-spacing: .3em; font-weight: 700; color: #D7DF21">THE STRONG COLLECTIVE</span>
-<h2 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: clamp(48px, 7vw, 96px); line-height: 1; color: #F7F3E8">You are a different<br><span style="font-style: italic">kind of strong.</span></h2>
-<p style="margin: 0; font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: clamp(24px, 2.4vw, 30px); color: #D9C38A">Train the mind. The body follows.</p>
-<a href="#enroll" class="ss-btn-light" style="margin-top: 12px; display: inline-flex; align-items: center; justify-content: center; min-height: 60px; padding: 0 40px; background: #D7DF21; color: #183D2D; text-decoration: none; font-size: 14px; font-weight: 700; letter-spacing: .18em; transition: background-color .25s ease, transform .25s ease">BEGIN YOUR STRONG START</a>
-</div>
-<footer style="position: relative; border-top: 1px solid rgba(247,243,232,.16)">
-<div style="max-width: 1240px; margin: 0 auto; padding: 28px 24px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-size: 14px; color: #C9D1C6">
-<span>© 2026 The KASH Method. All Rights Reserved.  |  The Strong Collective</span>
-<a href="#terms" style="color: #F7F3E8">Terms &amp; Conditions</a>
-</div>
+<!-- The invitation: price and terms (exactly as on the live site) -->
+<section class="section band" id="pricing">
+  <div class="container offer">
+    <div class="offer__card reveal">
+      <span class="eyebrow">A Simple Invitation</span>
+      <h2 class="offer__title">Your 14-Day Strong Start</h2>
+      <div class="offer__price">
+        <span class="offer__amount">$49.97</span>
+        <span class="offer__per">ONE-TIME PAYMENT</span>
+      </div>
+      <p class="lead">14 days of full access to The Strong Collective Premium experience.</p>
+      <div class="offer__terms">
+        <div class="offer__term"><span class="offer__term-title">No automatic renewal</span><span class="offer__term-text">One payment, that's it.</span></div>
+        <div class="offer__term"><span class="offer__term-title">You decide at day 14</span><span class="offer__term-text">Continue only if it's right for you.</span></div>
+        <div class="offer__term"><span class="offer__term-title">No pressure</span><span class="offer__term-text">Just your next step.</span></div>
+      </div>
+      <a class="btn btn--primary" href="#enroll">Start My 14 Days</a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ — the first two answers come from the live site's terms.
+     Every [bracketed] answer must come from the brand before launch. -->
+<section class="section" id="faq">
+  <div class="container faq__grid">
+    <div class="faq__head reveal">
+      <span class="eyebrow">Questions</span>
+      <h2 class="h2">Before you <em>begin.</em></h2>
+      <p class="lead">Still deciding? Here's what women usually ask first.</p>
+    </div>
+    <div class="faq__list reveal">
+      <details class="faq__item" open>
+        <summary class="faq__q">Will I be charged again after 14 days?<span class="faq__icon" aria-hidden="true"></span></summary>
+        <p class="faq__a">No. Your Strong Start is one payment of $49.97, with no automatic renewal.</p>
+      </details>
+      <details class="faq__item">
+        <summary class="faq__q">What happens at the end of my 14 days?<span class="faq__icon" aria-hidden="true"></span></summary>
+        <p class="faq__a">You decide if you want to continue. No pressure, and no starting over.</p>
+      </details>
+      <details class="faq__item">
+        <summary class="faq__q">I'm a beginner. Is this for me?<span class="faq__icon" aria-hidden="true"></span></summary>
+        <p class="faq__a"><span class="placeholder">[Answer from the brand — e.g. how workouts adapt to different fitness levels.]</span></p>
+      </details>
+      <details class="faq__item">
+        <summary class="faq__q">Do I need any equipment?<span class="faq__icon" aria-hidden="true"></span></summary>
+        <p class="faq__a"><span class="placeholder">[Answer from the brand.]</span></p>
+      </details>
+      <details class="faq__item">
+        <summary class="faq__q">When are the live workouts, and what if I miss one?<span class="faq__icon" aria-hidden="true"></span></summary>
+        <p class="faq__a"><span class="placeholder">[Live schedule from the brand.]</span> Every session is in the full replay and on-demand library.</p>
+      </details>
+      <details class="faq__item">
+        <summary class="faq__q">What is Kash Connect?<span class="faq__icon" aria-hidden="true"></span></summary>
+        <p class="faq__a"><span class="placeholder">[Answer from the brand — how the accountability and Q&amp;A sessions work.]</span></p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- Enrollment — STYLING TARGET for the existing GoHighLevel order form.
+     Do not ship this mockup form: embed the real GHL form here and restyle it to match. -->
+<section class="section" id="enroll" style="border-top:1px solid var(--line)">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Enrollment</span>
+      <h2 class="h2">You're one step away from <em>your Strong Start.</em></h2>
+      <p class="lead">Your Strong Start is just a few clicks away.</p>
+    </div>
+    <div class="enroll__grid">
+      <form class="checkout" aria-label="Enrollment and payment" onsubmit="return false">
+        <fieldset class="fieldset">
+          <legend>1. Your details</legend>
+          <div class="field">
+            <label class="label" for="ss-name">Full name</label>
+            <input class="input" id="ss-name" type="text" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label class="label" for="ss-email">Email address</label>
+            <input class="input" id="ss-email" type="email" autocomplete="email" aria-describedby="ss-email-hint" required>
+            <span class="hint" id="ss-email-hint">Your access details and receipt go here.</span>
+          </div>
+          <div class="field">
+            <label class="label" for="ss-phone">Phone number</label>
+            <input class="input" id="ss-phone" type="tel" autocomplete="tel" aria-invalid="true" aria-describedby="ss-phone-err" value="555 01">
+            <span class="error" id="ss-phone-err"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7.5v5.5M12 16.5v.01"/></svg>Please enter a full phone number, including area code.</span>
+          </div>
+        </fieldset>
+
+        <fieldset class="fieldset">
+          <legend>2. Payment</legend>
+          <div class="pay-methods" role="radiogroup" aria-label="Payment method">
+            <button class="pay-method" type="button" role="radio" aria-checked="true">Card</button>
+            <button class="pay-method" type="button" role="radio" aria-checked="false">PayPal</button>
+            <button class="pay-method" type="button" role="radio" aria-checked="false">Cash App Pay</button>
+            <button class="pay-method" type="button" role="radio" aria-checked="false">Amazon Pay</button>
+          </div>
+          <div class="field">
+            <label class="label" for="ss-card">Card number</label>
+            <input class="input" id="ss-card" type="text" inputmode="numeric" autocomplete="cc-number" placeholder="1234 1234 1234 1234">
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label class="label" for="ss-exp">Expiration</label>
+              <input class="input" id="ss-exp" type="text" autocomplete="cc-exp" placeholder="MM / YY">
+            </div>
+            <div class="field">
+              <label class="label" for="ss-cvc">Security code</label>
+              <input class="input" id="ss-cvc" type="text" inputmode="numeric" autocomplete="cc-csc" placeholder="CVC">
+            </div>
+            <div class="field">
+              <label class="label" for="ss-country">Country</label>
+              <select class="input" id="ss-country" autocomplete="country-name"><option>United States</option></select>
+            </div>
+          </div>
+        </fieldset>
+
+        <div class="field">
+          <button class="btn btn--primary btn--block" type="submit" style="min-height:64px">Start My 14-Day Strong Start &nbsp;·&nbsp; $49.97</button>
+          <p class="secure"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="1.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Secure checkout &nbsp;·&nbsp; One payment &nbsp;·&nbsp; No automatic renewal</p>
+        </div>
+      </form>
+
+      <aside class="summary" aria-label="Order summary">
+        <h3 class="summary__title">Order summary</h3>
+        <div class="summary__item">
+          <div><span class="summary__name">14-Day Strong Start</span><span class="summary__meta">The Strong Collective Premium · Qty 1</span></div>
+          <span>$49.97</span>
+        </div>
+        <div class="field">
+          <label class="label" for="ss-coupon">Coupon code</label>
+          <div class="coupon">
+            <input class="input" id="ss-coupon" type="text">
+            <button class="btn btn--outline" type="button">Apply</button>
+          </div>
+        </div>
+        <div class="totals">
+          <div class="totals__row"><span>Subtotal</span><span>$49.97</span></div>
+          <div class="totals__row totals__row--grand"><span>Total today</span><span class="totals__amount">$49.97</span></div>
+        </div>
+        <ul class="reassure">
+          <li>One payment. No automatic renewal.</li>
+          <li>At the end of your 14 days, you decide if you want to continue.</li>
+        </ul>
+      </aside>
+    </div>
+  </div>
+</section>
+</main>
+<!-- Closing statement + legal footer -->
+<footer class="closing band-green">
+  <div class="closing__ring" aria-hidden="true"></div>
+  <div class="closing__inner reveal">
+    <span class="eyebrow">The Strong Collective</span>
+    <h2 class="closing__title">You are a different<br><em>kind of strong.</em></h2>
+    <p class="closing__tagline">Train the mind. The body follows.</p>
+    <a class="btn btn--accent" href="#enroll">Begin Your Strong Start</a>
+  </div>
+  <div class="site-footer">
+    <div class="container site-footer__inner">
+      <span>© 2026 The KASH Method. All Rights Reserved. &nbsp;|&nbsp; The Strong Collective</span>
+      <!-- Point to the live Terms & Conditions URL -->
+      <a href="#terms">Terms &amp; Conditions</a>
+    </div>
+  </div>
 </footer>
-</section>
 
+<!-- Mobile-only sticky CTA: appears after the hero, hides while checkout is on screen -->
+<div class="mobile-cta" aria-hidden="true">
+  <div class="mobile-cta__price">
+    <span class="mobile-cta__amount">$49.97</span>
+    <span class="mobile-cta__note">One-time · No auto-renewal</span>
+  </div>
+  <a class="btn btn--accent" href="#enroll" tabindex="-1">Start My 14 Days</a>
 </div>
+<script src="assets/main.js" defer></script>
 </body>
 </html>

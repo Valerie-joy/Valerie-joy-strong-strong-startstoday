@@ -2,22 +2,68 @@
 
 A redesign concept for the Strong Starts Today homepage (The Strong Collective / The KASH Method). It is aimed at women ages 35–65.
 
-Open `index.html` in a browser to view it. With GitHub Pages enabled, it also works as a live preview.
+**Live preview:** https://valerie-joy.github.io/Valerie-joy-strong-strong-startstoday/
 
-> This is a design preview. The checkout section is a **styling target** for the existing GoHighLevel order form, not a working checkout. Nothing on the live site was changed.
+> This is a design preview. The checkout section is a **styling target** for the existing GoHighLevel order form, not a working checkout. Text in highlighted `[brackets]` must come from the brand before launch. Nothing on the live site was changed.
+
+## How the code is organized
+
+```
+index.html              ← built file that GitHub Pages serves (don't edit by hand)
+build.py                ← stitches the pieces below into index.html
+src/
+  layout.html           ← <head>, fonts, meta tags, page shell
+  sections/             ← one file per section of the page
+    header.html         ← sticky nav
+    hero.html
+    different-kind.html
+    experience.html     ← the four pillars
+    included.html
+    how-it-works.html
+    lifestyle.html
+    coach.html
+    pricing.html
+    faq.html
+    enroll.html         ← checkout styling target
+    closing.html        ← closing statement + footer
+    mobile-cta.html     ← sticky price bar on phones
+assets/
+  styles.css            ← design tokens + one block of styles per section
+  main.js               ← sticky-nav highlight, scroll reveal, mobile CTA bar
+```
+
+**To edit a section:** change its file in `src/sections/`, then run:
+
+```
+python3 build.py
+```
+
+Commit both the section file and the rebuilt `index.html`. To reorder, add or remove sections, edit the lists at the top of `build.py`.
 
 ## Page structure
 
-1. **Hero:** real-text H1 "Your Strong Starts Here.", tagline, primary CTA "Begin Your Strong Start"
-2. **A Different Kind of Strong:** emotional connection, built from existing copy
-3. **The Strong Collective Experience:** the four pillars in a numbered editorial grid
-4. **What your 14 days include:** the six inclusions, on deep green
-5. **Strength for the life you're living:** lifestyle photo story
-6. **A simple invitation:** $49.97 one-time, no automatic renewal, you decide at day 14
-7. **Enrollment:** labelled fields, error state, payment methods, one order summary, a consistent $49.97 total
-8. **Closing:** "You are a different kind of strong." plus a final CTA and footer
+1. **Sticky nav:** section links (desktop) and an always-visible "Begin" button
+2. **Hero:** real-text H1, tagline, primary CTA
+3. **A Different Kind of Strong:** emotional connection
+4. **The Strong Collective Experience:** the four pillars
+5. **What your 14 days include:** the six inclusions
+6. **How it works:** enroll → get access → show up your way
+7. **Strength for the life you're living:** lifestyle photo story
+8. **Meet your coach:** *needs the brand's bio and photo*
+9. **A simple invitation:** $49.97 one-time, no automatic renewal
+10. **FAQ:** two answers from the live terms, four *need the brand's answers*
+11. **Enrollment:** checkout styling target
+12. **Closing:** final statement, CTA, legal footer
+13. **Mobile CTA bar:** appears after the hero on phones and hides at checkout
 
-Every CTA links to `#enroll`.
+## Before launch: content needed from the brand
+
+- Original hero photo (to re-crop without the baked-in headline), plus lifestyle and coach photos
+- The coach's name, a short bio and a quote
+- FAQ answers: beginners, equipment, live schedule, Kash Connect
+- Confirmation that access details are sent by email (How It Works, step 2)
+- The Terms & Conditions URL (the footer link is currently `#terms`)
+- Real testimonials, if any exist. None were added, so no social proof is made up.
 
 ## Audit of the current page
 
@@ -32,39 +78,27 @@ Every CTA links to `#enroll`.
 | Medium | The checkout looks embedded: blue prices, placeholder-only labels, the item listed twice |
 | Low | About 15px body text in the pillars; the closing line has no CTA |
 
-**Worth keeping:** the palette, the warm and honest copy, the hero photo, and the clear offer terms.
-
 ## Design system
-
-**Color** (from the live page's computed styles)
 
 | Token | Hex | Use |
 |---|---|---|
 | Deep green | `#183D2D` | Buttons, headings, anchor sections |
 | Warm ivory | `#F7F3E8` | Canvas (alternate band `#EFE8D6`) |
-| Brand gold | `#B59645` | Rules, numerals, arches, focus ring (decorative only; 2.6:1 on ivory) |
+| Brand gold | `#B59645` | Rules, numerals, arches, focus ring (decorative only on ivory) |
 | Gold ink | `#7A6124` | Gold-colored text on ivory (5.2:1) |
-| Chartreuse | `#D7DF21` | Only on green: eyebrows, checks, closing CTA |
+| Chartreuse | `#D7DF21` | Only on green |
 | Body | `#3F4B45` | Paragraphs |
 | Error | `#A3341F` | Always paired with an icon and text |
 
-**Type**
+**Type:** Cormorant Garamond for headings and pull lines; Lato for body text (18–19px), labels and buttons. Retire Lora and Muli.
 
-- **Cormorant Garamond:** display (52–104px), H2 (40–64px), H3 32px, italic pull lines
-- **Lato:** body (18–19px, line-height 1.65), labels (15px bold), eyebrows (13px, letter-spacing .3em)
-- Retire Lora and Muli.
+**Spacing:** 8px base; max width 1240px; touch targets of at least 44px, with primary CTAs at 60px.
 
-**Spacing:** 8px base; sections 80–144px tall; max width 1240px; 24px mobile gutter; touch targets of at least 44px, with primary CTAs at 60px.
+**Motion:** sections fade up once on scroll; all motion is off under `prefers-reduced-motion`.
 
-**Imagery:** real women aged about 40–65, varied bodies, natural light, no text on photos. The recurring motif is an arch with an offset gold hairline.
+## Implementation notes for the live GHL funnel
 
-**Motion:** subtle fades and a 1px button lift; all motion is disabled under `prefers-reduced-motion`.
-
-## Implementation notes
-
-- **Checkout:** keep the existing GHL order form (Stripe card, PayPal, Cash App Pay, Amazon Pay, coupon). Restyle it with custom CSS in the funnel to match this layout.
-- **Remove** the on-load checkout popup.
-- **Fix** the $0.00 total so it never shows: render the correct total initially, or hide the total until it's calculated.
-- **Photos:** the three photo frames are placeholders. Replace them with the original hero file (re-cropped without the baked-in text) and new photography.
-- **Not verified:** the live mobile layout, coupon logic, and the Terms & Conditions URL (the link is currently `#terms`).
-- **Needs site access:** the original photo files, the logo, and the GHL funnel editor.
+- Keep the existing GHL order form (Stripe card, PayPal, Cash App Pay, Amazon Pay, coupon) and restyle it with custom CSS to match `enroll.html`.
+- Remove the on-load checkout popup.
+- Fix the $0.00 total so it never shows: render the correct total initially, or hide the total until it's calculated.
+- Tested at 375, 390, 768 and 1440px with no horizontal overflow. Not verified: the live site's mobile layout and coupon logic.
