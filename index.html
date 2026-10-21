@@ -36,29 +36,42 @@
   </div>
 </header>
 <main id="main">
-<!-- Hero: value proposition + primary CTA above the fold -->
-<section class="hero" id="top">
-  <div class="container hero__grid">
+<!-- Hero banner: full-width photo with live text over the left side.
+     Photo: the brand banner with its baked-in text removed (assets/img/hero-banner.*). -->
+<section class="hero hero--banner" id="top">
+  <picture class="hero__photo">
+    <source media="(max-width: 900px)" type="image/webp" srcset="assets/img/hero-banner-mobile.webp">
+    <source media="(max-width: 900px)" srcset="assets/img/hero-banner-mobile.jpg">
+    <source type="image/webp" srcset="assets/img/hero-banner.webp">
+    <img src="assets/img/hero-banner.jpg" width="1794" height="877" fetchpriority="high"
+         alt="A woman with curly hair stretching on a yoga mat in a sunlit living room, smiling as she looks toward the window">
+  </picture>
+  <div class="container hero__inner">
     <div class="hero__copy">
-      <span class="eyebrow eyebrow--rule">The Strong Collective</span>
+      <span class="eyebrow eyebrow--trail">The Strong Collective</span>
       <h1 class="hero__title">Your Strong<br><em>Starts Here.</em></h1>
-      <p class="hero__tagline">Train the mind. The body follows.</p>
-      <p class="lead hero__text">For the next 14 days, get full access to The Strong Collective Premium experience — workouts you can do from home, real accountability, and a community of women choosing to show up for themselves, right alongside you.</p>
+      <p class="hero__tagline-caps">Train the mind. The body follows.</p>
+      <p class="hero__lead">14 days of movement, mindset, accountability, and community — designed for your real life.</p>
       <div class="hero__actions">
-        <a class="btn btn--primary" href="#enroll">Begin Your Strong Start</a>
-        <span class="hero__support">14 days of movement, mindset, accountability, and community.</span>
+        <a class="btn btn--primary btn--arrow" href="#enroll">Begin Your Strong Start
+          <svg width="22" height="12" viewBox="0 0 22 12" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 6h19M15 1l5 5-5 5"/></svg>
+        </a>
+        <span class="hero__terms">$49.97 one-time · No automatic renewal</span>
       </div>
-      <p class="hero__terms">$49.97 one-time &nbsp;·&nbsp; No automatic renewal &nbsp;·&nbsp; You decide what's next</p>
-    </div>
-    <div class="hero__media">
-      <div class="hero__arch-line" aria-hidden="true"></div>
-      <!-- Replace with: <img src="assets/img/hero.jpg" alt="Woman stretching on a yoga mat in a sunlit living room" width="960" height="1200" fetchpriority="high"> -->
-      <div class="photo photo--arch" role="img" aria-label="Photo placeholder: brand hero photo">
-        <div class="photo__label">
-          <span class="photo__tag">BRAND PHOTO</span>
-          <span class="photo__note">Current hero image — woman stretching on her mat in a warm, sunlit room. Re-crop from the original file, without the headline baked in.</span>
-        </div>
-      </div>
+      <ul class="hero__benefits">
+        <li class="hero__benefit">
+          <svg width="38" height="38" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round" aria-hidden="true"><path d="M20 30c-3-3-4.5-7-4.5-11S17 11 20 8c3 3 4.5 7 4.5 11S23 27 20 30z"/><path d="M20 30c-4.5 0-9-2-11.5-6.5 1.5-2.5 4-4 6.8-4.3"/><path d="M20 30c4.5 0 9-2 11.5-6.5-1.5-2.5-4-4-6.8-4.3"/><path d="M20 30c-6 1-11.5-.5-15-4 1-1.5 2.5-2.5 4.2-3"/><path d="M20 30c6 1 11.5-.5 15-4-1-1.5-2.5-2.5-4.2-3"/></svg>
+          <span>Stronger<br>mindset</span>
+        </li>
+        <li class="hero__benefit">
+          <svg width="38" height="38" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="13" width="4" height="14" rx="1"/><rect x="28" y="13" width="4" height="14" rx="1"/><rect x="4" y="16" width="4" height="8" rx="1"/><rect x="32" y="16" width="4" height="8" rx="1"/><path d="M12 20h16"/></svg>
+          <span>Healthier<br>body</span>
+        </li>
+        <li class="hero__benefit">
+          <svg width="38" height="38" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round" aria-hidden="true"><path d="M20 33S6 24.5 6 15a7 7 0 0 1 14-2 7 7 0 0 1 14 2c0 9.5-14 18-14 18z"/></svg>
+          <span>Happier<br>you</span>
+        </li>
+      </ul>
     </div>
   </div>
 </section>
