@@ -4,7 +4,7 @@ A redesign concept for the Strong Starts Today homepage (The Strong Collective /
 
 **Live preview:** https://valerie-joy.github.io/Valerie-joy-strong-strong-startstoday/
 
-> This is a design preview. The checkout section is a **styling target** for the existing GoHighLevel order form, not a working checkout. Text in highlighted `[brackets]` must come from the brand before launch. Nothing on the live site was changed.
+> This is a portfolio sample. The checkout is a **working demo**: it validates the form, switches payment methods, responds to coupons and shows a confirmation, but **no payment is processed and nothing is sent or saved**. The card fields are locked to Stripe's public test card. Text in highlighted `[brackets]` must come from the brand before launch. Nothing on the client's live site or accounts was touched.
 
 ## How the code is organized
 
@@ -24,12 +24,12 @@ src/
     coach.html
     pricing.html
     faq.html
-    enroll.html         ← checkout styling target
+    enroll.html         ← demo checkout (front-end only)
     closing.html        ← closing statement + footer
     mobile-cta.html     ← sticky price bar on phones
 assets/
   styles.css            ← design tokens + one block of styles per section
-  main.js               ← sticky-nav highlight, scroll reveal, mobile CTA bar
+  main.js               ← sticky-nav highlight, scroll reveal, mobile CTA bar, demo checkout logic
 ```
 
 **To edit a section:** change its file in `src/sections/`, then run:
@@ -52,7 +52,7 @@ Commit both the section file and the rebuilt `index.html`. To reorder, add or re
 8. **Meet your coach:** *needs the brand's bio and photo*
 9. **A simple invitation:** $49.97 one-time, no automatic renewal
 10. **FAQ:** two answers from the live terms, four *need the brand's answers*
-11. **Enrollment:** checkout styling target
+11. **Enrollment:** demo checkout with validation, payment method switch, coupon message, loading state and confirmation screen
 12. **Closing:** final statement, CTA, legal footer
 13. **Mobile CTA bar:** appears after the hero on phones and hides at checkout
 
@@ -98,7 +98,7 @@ Commit both the section file and the rebuilt `index.html`. To reorder, add or re
 
 ## Implementation notes for the live GHL funnel
 
-- Keep the existing GHL order form (Stripe card, PayPal, Cash App Pay, Amazon Pay, coupon) and restyle it with custom CSS to match `enroll.html`.
+- For a real build, replace the demo form in `enroll.html` with the brand's GoHighLevel order form (Stripe card, PayPal, Cash App Pay, Amazon Pay, coupon) and restyle it with custom CSS to match.
 - Remove the on-load checkout popup.
 - Fix the $0.00 total so it never shows: render the correct total initially, or hide the total until it's calculated.
 - Tested at 375, 390, 768 and 1440px with no horizontal overflow. Not verified: the live site's mobile layout and coupon logic.
